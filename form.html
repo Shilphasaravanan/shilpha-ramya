@@ -205,6 +205,8 @@ table{
 
 #btna td input{
 	width: 100%;
+    height:20px;
+    color:gray;
 }
 </style>
 </head>
@@ -214,46 +216,40 @@ table{
 <form>
 <div id="name">
 <h2 class="name">Name</h2>
-<input id="fname" type="text" name="fname" ><br>
+<input id="fname" type="text" name="fname" placeholder="firstname"><br>
 <label class="firstlabel">first name </label>
-<input id="lname" type="text" name="lname" ><br>
+<input id="lname" type="text" name="lname" placeholder="lastname"><br>
 <label class="lastlabel">last name </label>
 </div>
 <h2 class="name">company</h2>
-<input id="company" type="text" name="company" >
+<input id="company" type="text" name="company" placeholder="Infosys" >
 
 <h2 class="name">Email</h2>
-<input id="email" type="text" name="email" >
+<input id="email" type="text" name="email" placeholder="abc12@gmail.com" >
 
 <h2 class="name">phone</h2>
-<input class="code" type="text" name="area_code">
+<input class="code" type="text" name="area_code" placeholder="+91">
 <label class="area_code"> Area code</label>
-<input class="number" type="text" name="phone">
+<input class="number" type="text" name="phone" placeholder="8695458568"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
 <label class="phone_number">Phone Number</label>
 
 <h2 class="name">Subject</h2>
 <select class="option" name="subject">
 <option disabled="disabled" selected="selected">--choose option--</option>
-<option> Subject 1</option>
-<option> Subject 1</option>
-<option> Subject 1</option>
+<option> HTML</option>
+<option>CSS</option>
+<option>BOOTSTRAP</option>
 </select>
 <h2 id="student">Are You Beginner ? </h2>
-<label class="ratio">
-<input class="ratio-one" type="radio" checked="checked" name="">
-<span class ="checkmark"> </span>
-YES
-</label>
-
-<label class="ratio">
-<input class="ratio-two" type="radio" checked="checked" name="">
-<span class ="checkmark"> </span>
-No
+  <input type="radio" id="yes" name="fav_language" value="YES">
+  <label for="YES">YES</label>
+  <input type="radio" id="no" name="fav_language" value="NO">
+  <label for="NO">NO</label>
 <button type="submit">Register</button>
 <input type="button" name="button" id="btn" value="Add" onclick="AddRow()">
 </form>
 </div>
-</label>
 <center>
 <table border="4" id="show">
 			<thead>
